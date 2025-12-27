@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Prueba esta línea para ver si algún icono funciona */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+
+
+body {
+    font-family: "Playwrite NZ", cursive;
+    background-color: #eae4f3;
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Card{
+    margin: 0px;
+    width: 200px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: grab;
+    user-select: none;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    transition: 1s;
+    
+}
+
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    max-width: 1400px;
+    flex-wrap: wrap;
+    margin: 40px;
+    margin-bottom: 20px;
+    column-gap: 20px;
+
+}
+
+#Title {
+    width: 100%;
+    padding: 3px;
+    height: 15%;
+    font-size: 0.7rem;
+}
+
+#Content {
+    min-height: 200px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ModalContent {
+    box-shadow: 0px 0px 10px 0px #b8c2fc;
+    background-color: rgba(253, 254, 255, 0.863);
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 310px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#AgregarNota {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #683564;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+#AgregarNota h1 {
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 5px;
+    padding: 0;
+    font-size: 1.7rem;
+    border-radius: 20px;
+    background-color: #2039b6;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+#AgregarNota p {
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.TinyCard {
+    font-weight: 300;
+    font-family: inter, sans-serif;
+    width: 160px;
+    min-height: 60px;
+    background-color: #2039b6;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: grab;
+    user-select: none;
+    margin-bottom: 0px;
+    box-shadow:  2px 10px 5px rgba(0, 0, 0, 0.089) ;
+    white-space: normal;
+    overflow: wrap;
+    white-space: normal;
+    word-wrap: break-word;
+    
+}
+
+hr{
+    height: 3px;
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.685);
+}
+
+p{
+    margin: 10px;
+    font-size: 0.9rem;
+}
+
+#addCard {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #683564;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 100vh;
+}
+
+#colorOptions {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.colorButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+#aceptar {
+    background-color: #C2E5D0;
+    color: rgb(14, 14, 14);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    width: 130px;
+    height: 20px;
+    line-height: 0px;    
+    text-align: center;
+    font-size: 15px;
+}
+
+
+#cancelar {
+    background-color: #b8c2fc;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    width: 130px;
+    height: 20px;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 0px;
+    font-size: 15px;
+}
+
+#cardButton{
+    color: aliceblue;
+    border-radius: 30px;
+    border: none;
+    background-color: #b62020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+}
+
+
+#cardButton span{
+    margin: 0px;
+}
+
+.divideContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.circle{
+    background-color: #b8c2fc;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    line-height: 40px;
+    margin-left: -15px;
+}
+
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    min-width: 40px;
+}
+
+#handleContainer {
+    font-family: inter, sans-serif;
+    box-shadow: #b8c2fc 0px 0px 5px 0px;
+    background-color: linear-gradient(to right, #b7c3ff62 50%, #d4c7c756 50%);
+    border-radius: 50px;
+    height: 50px;
+    width: 400px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#handleContainer button{
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#handleContainer h2 {
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    white-space: nowrap;
+    cursor: default;
+    margin: 10px;
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    height: 30px;
+    width: 280px;
+    margin: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.editContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.editContainer button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: none;
+    
+
+}
+
+.editNote{
+    margin-top: 15px;
+    
+}
+
+.material-symbols-outlined{
+   font-size: 18px;
+   justify-content: center;
+   color: aliceblue;
+}
+
+button :hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.02);
+    transition: 0.5s ;
+    box-shadow: 0px 0px 5px 0px #b8c2fc;
+}
+
+#handleContainer .material-symbols-outlined{
+    font-size: 30px;
+}
+
+
+.red {
+    background-color: #FF8A8A; /* Rosa/Rojo Pastel Suave */
+    color: black;
+
+}
+
+.yellow {
+    background-color: #FAF0C8; /* Amarillo Crema o Mantequilla */
+    color: black;
+}
+
+.green {
+    background-color: #c1e9ca; /* Verde Menta Claro */
+    color: black;
+
+}
+
+.blue {
+    background-color: #ADD8E6; /* Azul Cielo o Celeste Pastel */
+    color: black;
+}
+
+.purple {
+    background-color: #b8c2fc; /* Lila o Púrpura Lavanda */
+    color: black;
+}
+
+.orange {
+    color: black;
+    background-color: #FFC9B4; /* Naranja Melocotón Suave */
+}
+
+.AnimationHoverCard{
+    transform: translate(0px, -10px);
+    transition: 1s;
+}
+
+.SelectedCard {
+  transform: translate(0px, -10px);
+  transition: 1s;
+  border: 50px ;
+  border-color: #ffffff;
+  box-shadow: 2px 2px 10px 5px rgb(255, 255, 255) ;
+}
+
+.selectedButton{
+    box-shadow: 0px 0px 5px 0px #000000;
+}
+
